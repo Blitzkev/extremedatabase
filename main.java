@@ -1,3 +1,13 @@
+/* Account info
+ *Unix:
+ * Login: p485-70a
+ * Pwd: Please.Change.This
+
+ *Oracle:
+ * Login: p48570a
+ * Pwd: pidooyiengei
+ */
+
 
 public class main {
 
