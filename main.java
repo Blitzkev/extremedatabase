@@ -23,6 +23,13 @@ import gui.MusicGUI;
  * When prompted for password, enter this:
  * 
  * Enter Password: letmein
+ * 
+ * -----------------------------------------------------------------
+ * Useful notes:
+ * 
+ * To view all the tables inserted into the database via SQL:
+ * 
+ * select table_name from user_tables
  */
 
 public class main {
@@ -44,7 +51,7 @@ public class main {
 		gui = MusicGUI.addResultTab("people2", gui);
 		
 		//log into oracle DB
-		String dbUser = "p48570a@csodb10";
+		String dbUser = "p48570a";
 		String dbPassword = "letmein";
 		
 		try {

@@ -19,7 +19,7 @@ public class Crud {
 	    BufferedReader bReader = new BufferedReader( inReader );
 	    System.out.print("Enter your user id: ");
 	    dbUser = bReader.readLine();
-	    System.out.print("Enter your passwd (ONLY IF NOBODY IS AROUND!):");
+	    System.out.print("Enter your passwd (ONLY IF NOBODY IS AROUND!): ");
 	    dbPassword = bReader.readLine();
 	}
 	catch (Exception e) {
