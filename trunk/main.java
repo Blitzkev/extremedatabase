@@ -33,46 +33,46 @@ import gui.MusicGUI;
  */
 
 public class main {
-	//our gui instance
-	public static MusicGUI gui = null;
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-	    
-		// setup and show the GUI
-		gui = new MusicGUI();
-	
-		// add some fake tabs...
-		gui = MusicGUI.addResultTab("people", gui);
-		gui = MusicGUI.addResultTab("names", gui);
-		gui = MusicGUI.addResultTab("people2", gui);
-		
-		//log into oracle DB
-		String dbUser = "p48570a";
-		String dbPassword = "letmein";
-		
-		try {
-		    Connection con;
-		    Statement stmt;
-	            String url = "jdbc:oracle:thin:@queeg:1521:csodb10";
-		    // DATABASE CONNECTION MAGIC :-)
-	            Class.forName("oracle.jdbc.driver.OracleDriver");
-		    con = DriverManager.getConnection(url, dbUser, dbPassword);
-		    stmt = con.createStatement();
-			stmt.executeUpdate("insert into user values(1, 'Kevin')");
+    //our gui instance
+    public static MusicGUI gui = null;
+    
+    /**
+     * @param args
+     */
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        
+        // setup and show the GUI
+        gui = new MusicGUI();
+    
+        // add some fake tabs...
+        gui = MusicGUI.addResultTab("people", gui);
+        gui = MusicGUI.addResultTab("names", gui);
+        gui = MusicGUI.addResultTab("people2", gui);
+        
+        //log into oracle DB
+        String dbUser = "p48570a";
+        String dbPassword = "letmein";
+        
+        try {
+            Connection con;
+            Statement stmt;
+                String url = "jdbc:oracle:thin:@queeg:1521:csodb10";
+            // DATABASE CONNECTION MAGIC :-)
+                Class.forName("oracle.jdbc.driver.OracleDriver");
+            con = DriverManager.getConnection(url, dbUser, dbPassword);
+            stmt = con.createStatement();
+            stmt.executeUpdate("insert into user values(1, 'Kevin')");
 
-		}catch(Exception e) {
-		    e.printStackTrace();
-		}finally {
+        }catch(Exception e) {
+            e.printStackTrace();
+        }finally {
 
-		}
-
-
+        }
 
 
-	}
+
+
+    }
 
 }
