@@ -62,11 +62,18 @@ public class main {
 	            Class.forName("oracle.jdbc.driver.OracleDriver");
 		    con = DriverManager.getConnection(url, dbUser, dbPassword);
 		    stmt = con.createStatement();
+
+            stmt.executeUpdate("insert into user values(1, 'Kevin')");
+
 		}catch(Exception e) {
 		    e.printStackTrace();
 		}finally {
 
 		}
+
+
+
+
 	}
 
 }
